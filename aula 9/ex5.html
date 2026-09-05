@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Nome</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
+    <div id="msg">Clique aqui</div>
+    <script>
+    var corpo = document.body
+       var p1 = document.getElementsByTagName('p') [1]
+       corpo.style.background = 'black'
+       document.write(p1.innerHTML) //innerHTML ja vem com a mesma formatação
+       /*var d = document.getElementById('msg')
+       d.style.background = 'green'
+       d.innerText = 'Aguarde...'*/
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'blue'
+         var Nome = document.getElementById('titulo')
+        titulo.style.background = 'green'
+    </script>
+</body>
+</html>
